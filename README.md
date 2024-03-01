@@ -22,7 +22,7 @@ This repository contains the backend implementation for a mockup payment applica
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/payment-dummy-app-backend.git
+   git clone https://github.com/sanchit-560/payment-dummy-app-backend.git
    ```
 2. Navigate to the project directory:
    ```
@@ -32,9 +32,6 @@ This repository contains the backend implementation for a mockup payment applica
    ```
    npm install
    ```
-4. Configure your environment variables:
-   - Rename `.env.example` to `.env`
-   - Set your database connection string and JWT secret key in the `.env` file.
 
 ### Running the Application
 
@@ -71,9 +68,7 @@ This repository contains the backend implementation for a mockup payment applica
 
 Feel free to fork this repository and submit pull requests to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
