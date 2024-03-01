@@ -61,13 +61,29 @@ This repository contains the backend implementation for a mockup payment applica
 
 ### Testing with Postman
 
-- Import the provided Postman collection to test the API endpoints.
-- Ensure the server is running and send requests to test functionalities like user signup, signin, balance fetching, and fund transfers.
 
-## Contributing
+## User
 
-Feel free to fork this repository and submit pull requests to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
+### Endpoints:
 
+- **Sign In**: 
+  - Endpoint: `http://localhost:3000/api/v1/user/signin`
+  - Method: POST
+  - Description: Used for user authentication and login.
+  
+- **Sign Up**:
+  - Endpoint: `http://localhost:3000/api/v1/user/signup`
+  - Method: POST
+  - Description: Used for creating a new user account.
+
+- **Bulk User Search**:
+  - Endpoint: `http://localhost:3000/api/v1/user/bulk?filter=Khosla`
+  - Method: PUT
+  - Description: Used for filtering users by firstName/lastName or any characters.
+
+### Testing:
+
+To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3000` before making any requests.
 
 
 ---
