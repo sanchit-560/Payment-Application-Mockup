@@ -88,17 +88,16 @@ This repository contains the backend implementation for a mockup payment applica
 ### Endpoints:
 
 - **Balance**:
-  - Endpoint: `http://localhost:3001/api/v1/account/balance`
+  - Endpoint: `http://localhost:3000/api/v1/account/balance`
   - Method: GET
   - Description: Used for retrieving the balance of the user's account.
 
 - **Transfer**:
-  - Endpoint: `http://localhost:3001/api/v1/account/transfer`
+  - Endpoint: `http://localhost:3000/api/v1/account/transfer`
   - Method: POST
   - Description: Used for transferring funds from the user's account to another account.
 
 ### Testing:
--To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3001` before making any requests.
----
+To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3001` before making any requests. ---
 
 This project allows for a comprehensive demonstration of backend development skills, including API development, database management, authentication, and handling of financial transactions, providing a strong foundation for further development and learning in the field of web development.
