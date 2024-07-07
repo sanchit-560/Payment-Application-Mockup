@@ -81,7 +81,6 @@ This repository contains the backend implementation for a mockup payment applica
   - Method: PUT
   - Description: Used for filtering users by firstName/lastName or any characters.
  
-  Certainly, here's the updated section for the "User" heading in your README file:
 
 ### Account
 
