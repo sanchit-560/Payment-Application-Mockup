@@ -1,4 +1,5 @@
-# Payment Dummy App Backend
+
+# Payments App
 
 This repository contains the backend implementation for a mockup payment application designed to simulate user signups, authentication, and transaction processes. It's built using Node.js, Express.js, and MongoDB with Mongoose for database interactions. The backend supports secure user authentication, account management, and fund transfer functionalities.
 
@@ -21,22 +22,22 @@ This repository contains the backend implementation for a mockup payment applica
 ### Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/sanchit-560/payment-dummy-app-backend.git
    ```
 2. Navigate to the project directory:
-   ```
+   ```bash
    cd payment-dummy-app-backend
    ```
 3. Install the necessary packages:
-   ```
+   ```bash
    npm install
    ```
 
 ### Running the Application
 
 1. Start the server:
-   ```
+   ```bash
    npm start
    ```
 2. The server will be running on `http://localhost:3000`.
@@ -61,12 +62,11 @@ This repository contains the backend implementation for a mockup payment applica
 
 ### Testing with Postman
 
+## Endpoints
 
-## User
+### User
 
-### Endpoints:
-
-- **Sign In**: 
+- **Sign In**:
   - Endpoint: `http://localhost:3000/api/v1/user/signin`
   - Method: POST
   - Description: Used for user authentication and login.
@@ -80,11 +80,8 @@ This repository contains the backend implementation for a mockup payment applica
   - Endpoint: `http://localhost:3000/api/v1/user/bulk?filter=Khosla`
   - Method: PUT
   - Description: Used for filtering users by firstName/lastName or any characters.
- 
 
 ### Account
-
-### Endpoints:
 
 - **Balance**:
   - Endpoint: `http://localhost:3000/api/v1/account/balance`
@@ -97,6 +94,36 @@ This repository contains the backend implementation for a mockup payment applica
   - Description: Used for transferring funds from the user's account to another account.
 
 ### Testing:
-To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3001` before making any requests. ---
+To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3001` before making any requests.
 
-This project allows for a comprehensive demonstration of backend development skills, including API development, database management, authentication, and handling of financial transactions, providing a strong foundation for further development and learning in the field of web development.
+## Frontend Integration
+
+### React Router Setup
+
+To integrate the frontend, you need to import `react-router-dom` into your project and add the following routes:
+
+- `/signup` - The signup page
+- `/signin` - The signin page
+- `/dashboard` - Balances and see other users on the platform.
+- `/send` - Send money to other users
+
+### Frontend Features
+
+- **User Balance**: Show the user their balance.
+- **User List**: Display a list of users that exist in the database.
+- **Send Money**: Clicking on "Send money" should open a modal that lets the user send money.
+
+### Components and Wiring Up Backend Calls
+
+The frontend is built using React components to structure the application. Each route corresponds to a specific component that handles the rendering and logic for that part of the app.
+
+- **Signup Component**: Handles user registration.
+- **Signin Component**: Manages user login.
+- **Dashboard Component**: Displays user balance and list of other users.
+- **SendMoney Component**: Manages the fund transfer process.
+
+To wire up backend calls, you can use libraries like `axios` to make HTTP requests to the backend API endpoints. Ensure you handle authentication tokens correctly and secure sensitive actions.
+
+---
+
+Feel free to modify any part of the README further if needed!
