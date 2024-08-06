@@ -23,7 +23,7 @@ This repository contains the backend implementation for a mockup payment applica
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sanchit-560/payment-solution-application.git
+   git clone https://github.com/sanchit-560/Payment-Backend.git
    ```
 2. Navigate to the project directory:
    ```bash
