@@ -122,6 +122,6 @@ The frontend is built using React components to structure the application. Each 
 - **Dashboard Component**: Displays user balance and list of other users.
 - **SendMoney Component**: Manages the fund transfer process.
 
-To wire up backend calls, you can use libraries like `axios` to make HTTP requests to the backend API endpoints. Ensure you handle authentication tokens correctly and secure sensitive actions.
+To wire up backend calls, I used  `axios` to make HTTP requests to the backend API endpoints.
 
 
