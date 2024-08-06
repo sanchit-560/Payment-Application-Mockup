@@ -1,54 +1,47 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://itzsanchitkhosla:svx7Y586c940qvpA@cluster0.mkahtsg.mongodb.net/")
-const userSchema = new mongoose.Schema({
-    firstName:{
-        type:String,
-        required:true,
+const { float } = require('webidl-conversions');
+mongoose.connect("mongodb+srv://itzsanchitkhosla:p-uzpeK8h6Y-n_B@cluster0.mkahtsg.mongodb.net/")
+const UserSchema = new mongoose.Schema({
+    userName: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+        lowercase: true,
         minLength: 3,
-        maxLength:50,
-        trim:true
+        maxLength: 30
     },
-    lastName:{
-        type:String,
-        required:true,
-        minLength: 3,
-        maxLength:50,
-        trim:true
+    password: {
+        type: String,
+        required: true,
+        minLength: 6
     },
-    userName:{
-        type:String,
-        required:true,
-        unique:true,
-        minLength: 3,
-        maxLength:50,
-        trim:true,
+    firstName: {
+        type: String,
+        required: true,
+        trim: true,
+        maxLength: 50
     },
-    password:{
-        type:String,
-        required:true,
-        minLength: 3,
-        maxLength:50,
-        trim:true,
+    lastName: {
+        type: String,
+        required: true,
+        trim: true,
+        maxLength: 50
     }
 })
-
-const accountSchema = new mongoose.Schema({
+const AccountsSchema = new mongoose.Schema({
     userId:{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
-        required:true,
+        ref:'User', //It will prevent from creating an account for user which does not exist as we have referenced User table in the account schema. 
+        required:true
     },
     balance:{
-        type:Number,
-        required:true,
+       type:Number,
+       required:true
     }
 })
-
-
-const User = mongoose.model("User", userSchema);
-const Accounts = mongoose.model("Accounts", accountSchema);
-
-
+const Account = mongoose.model("Account", AccountsSchema)
+const User = mongoose.model("User", UserSchema)
 module.exports = {
-    User,Accounts
+  User, Account
 }
