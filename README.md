@@ -1,8 +1,5 @@
 
-<<<<<<< HEAD
-## Build a basic version of PayTM
-=======
-# Payments App
+# Payment Solution App Backend
 
 This repository contains the backend implementation for a mockup payment application designed to simulate user signups, authentication, and transaction processes. It's built using Node.js, Express.js, and MongoDB with Mongoose for database interactions. The backend supports secure user authentication, account management, and fund transfer functionalities.
 
@@ -26,11 +23,11 @@ This repository contains the backend implementation for a mockup payment applica
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sanchit-560/payment-dummy-app-backend.git
+   git clone https://github.com/sanchit-560/payment-solution-application.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd payment-dummy-app-backend
+   cd payment-backend
    ```
 3. Install the necessary packages:
    ```bash
@@ -127,8 +124,4 @@ The frontend is built using React components to structure the application. Each 
 
 To wire up backend calls, you can use libraries like `axios` to make HTTP requests to the backend API endpoints. Ensure you handle authentication tokens correctly and secure sensitive actions.
 
----
 
-Feel free to modify any part of the README further if needed!
->>>>>>> 6588d5dcd501dc60453d98bc13d586575eedb50c
-# payment-application
