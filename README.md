@@ -111,7 +111,7 @@ To integrate the frontend, you need to import `react-router-dom` into your proje
 
 - **User Balance**: Show the user their balance.
 - **User List**: Display a list of users that exist in the database.
-- **Send Money**: Clicking on "Send money" should open a modal that lets the user send money.
+- **Send Money**: Clicking on "Send money" should open a new page that lets the user send money.
 
 ### Components and Wiring Up Backend Calls
 
