@@ -94,7 +94,7 @@ This repository contains the backend implementation for a mockup payment applica
   - Description: Used for transferring funds from the user's account to another account.
 
 ### Testing:
-To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3001` before making any requests.
+To test these endpoints, you can use tools like Postman or make requests directly from your frontend application. Ensure that the server is running on `http://localhost:3000` before making any requests.
 
 ## Frontend Integration
 
